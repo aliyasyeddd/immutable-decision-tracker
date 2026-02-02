@@ -7,6 +7,11 @@ import { bindEventListeners, bindDeleteDecision } from "./handlers/decisionHandl
 
 let state
 
+
+// Initialize the application
+//loads saved decisions from localStorage, 
+// sets up initial state, renders decisions,
+//  and binds event listeners
 function initApp() {
     // Load decisions from localStorage
     const savedDecisions = JSON.parse(localStorage.getItem("decisions")) || [];
@@ -25,6 +30,8 @@ function initApp() {
     bindDeleteDecision(handleDeleteDecision);
 }
 
+
+// Handle addition of a new decision
 function handleAddDecision(decision) {
     state = addDecision(state, decision);
 
@@ -36,6 +43,7 @@ function handleAddDecision(decision) {
     clearInput();
 }
 
+// Handle deletion of a decision
 function handleDeleteDecision(index) {
     state = removeDecision(state, index);
 

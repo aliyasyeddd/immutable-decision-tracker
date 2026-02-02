@@ -28,6 +28,7 @@ export function getDecisions(state) {
 }
 
 //remove function to delete a decision from the state
+//removes item at that index
 export function removeDecision(state, index) {
   return state.update("decisions", list => list.delete(index));
 }
