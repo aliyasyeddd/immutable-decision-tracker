@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Decision Tracker</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Import map to resolve bare module specifiers in the browser -->
@@ -43,10 +45,9 @@
       <section class="decisions" aria-labelledby="decisions-heading">
         <h2 id="decisions-heading">Decisions</h2>
         <p id="no-decisions" class="muted" role="status" aria-live="polite" aria-atomic="true">No decisions added yet.</p>
-        <ul id="decision-list" role="list" aria-live="polite" aria-relevant="additions"></ul>
+        <ul id="decision-list" role="list" aria-live="polite" aria-relevant="additions" aria-labelledby="decisions-heading" aria-hidden="true"></ul>
         <!-- Decision list will be rendered here by JavaScript -->
       </section>
-      <!-- Decision list will be rendered here by JavaScript -->
     </div>
     <script type="module" src="src/main.js"></script>
   </body>

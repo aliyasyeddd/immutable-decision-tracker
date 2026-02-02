@@ -7,7 +7,7 @@ export function renderDecisions(decisions) {
   
   // Convert Immutable.js collection to plain JS using toJS()
   const items = typeof decisions?.toJS === 'function' ? decisions.toJS() : decisions;
-  console.log('Decisions as plain JS:', items);
+
 
   if (!items || items.length === 0) {
     document.getElementById("no-decisions").style.display = "block";
