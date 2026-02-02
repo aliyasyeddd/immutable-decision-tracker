@@ -61,9 +61,7 @@ Here are the key JavaScript concepts or tools covered while building this projec
 
 ## 🖼️ Screenshots / Demo  
 
-![App Screenshot](./images/demo.png)  
-
-🔗 **Live Demo:** [https://your-demo-link.vercel.app](https://your-demo-link.vercel.app)  
+![App Screenshot](./demo.png)   
 
 ---
 
