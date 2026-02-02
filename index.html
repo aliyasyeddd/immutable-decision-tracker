@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicons -->
-   <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Decision Tracker</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Import map to resolve bare module specifiers in the browser -->
@@ -19,7 +26,7 @@
   <body>
     <div class="container">
       <h1>Immutable Decision Tracker</h1>
-     
+
       <form id="decision-form" class="form" aria-labelledby="decision-label">
         <label id="decision-label" for="decision-input" class="sr-only"
           >Decision</label
@@ -44,8 +51,23 @@
 
       <section class="decisions" aria-labelledby="decisions-heading">
         <h2 id="decisions-heading">Decisions</h2>
-        <p id="no-decisions" class="muted" role="status" aria-live="polite" aria-atomic="true">No decisions added yet.</p>
-        <ul id="decision-list" role="list" aria-live="polite" aria-relevant="additions" aria-labelledby="decisions-heading" aria-hidden="true"></ul>
+        <p
+          id="no-decisions"
+          class="muted"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          No decisions added yet.
+        </p>
+        <ul
+          id="decision-list"
+          role="list"
+          aria-live="polite"
+          aria-relevant="additions"
+          aria-labelledby="decisions-heading"
+          aria-hidden="true"
+        ></ul>
         <!-- Decision list will be rendered here by JavaScript -->
       </section>
     </div>

@@ -18,7 +18,21 @@ export function renderDecisions(decisions) {
 
   items.forEach((decision) => {
     const listItem = document.createElement("li");
-    listItem.textContent = decision;
+    listItem.className = "decision-item";
+
+    //text
+   const text = document.createElement("span");
+    text.textContent = decision;
+    //transfer aria attributes for accessibility
+    listItem.setAttribute("role", "listitem");
+    
+    //trash icon for delete 
+    const trashIcon = document.createElement("i");
+    trashIcon.className = "fa-solid fa-trash";
+    trashIcon.setAttribute("aria-label", "Delete decision");
+     
+    listItem.appendChild(text);
+    listItem.appendChild(trashIcon);
     list.appendChild(listItem);
   });
 }

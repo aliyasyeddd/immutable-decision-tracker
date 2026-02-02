@@ -1,6 +1,6 @@
-import { createInitialState, addDecision, getDecisions } from "./state/decisionState.js";
+import { createInitialState, addDecision, getDecisions, removeDecision } from "./state/decisionState.js";
 import { renderDecisions, clearInput } from "./ui/renderDecisions.js";
-import { bindEventListeners } from "./handlers/decisionHandler.js";
+import { bindEventListeners, bindDeleteDecision } from "./handlers/decisionHandler.js";
 
 // Main application logic
 // Manages state and coordinates between UI and event handlers
@@ -19,9 +19,10 @@ function initApp() {
             state = addDecision(state, decision);
         });
     }
-    
+
     renderDecisions(getDecisions(state));
     bindEventListeners(handleAddDecision);
+    bindDeleteDecision(handleDeleteDecision);
 }
 
 function handleAddDecision(decision) {
@@ -34,6 +35,17 @@ function handleAddDecision(decision) {
     renderDecisions(getDecisions(state));
     clearInput();
 }
+
+function handleDeleteDecision(index) {
+    state = removeDecision(state, index);
+
+    // Update localStorage
+    const plainDecisions = getDecisions(state).toJS();
+    localStorage.setItem("decisions", JSON.stringify(plainDecisions));
+
+    renderDecisions(getDecisions(state));
+}
+
 
 // Initialize the app immediately when the module loads
 initApp();
