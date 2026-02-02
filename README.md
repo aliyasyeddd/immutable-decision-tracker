@@ -1,2 +1,66 @@
-# immutable-decision-tracker
-A beginner-friendly project to learn Immutable.js
+#  Immutable Decision Tracker 
+
+> A beginner-friendly JavaScript project to track decisions step-by-step using **Immutable.js**, ensuring past states are never lost.    
+
+---
+
+## 🪞 Overview  
+Write a short paragraph describing your project:  
+- What problem it solves  
+- Who it’s for  
+- What makes it unique or fun  
+
+_Example:_  
+This web app allows users to interact with dynamic content using JavaScript. It focuses on simplicity, responsiveness, and clean UI design principles.  
+
+---
+
+## 🚀 Features  
+✨ Key things your app can do:  
+
+- 🎯 Feature 1  
+- 🧠 Feature 2  
+- 📱 Feature 3  
+- 🌙 Feature 4  
+
+---
+
+## 🧱 Tech Stack  
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5** | Structure of the app |
+| **CSS3** | Styling and responsiveness |
+| **JavaScript (ES6)** | Logic and interactivity |
+| *(Optional)* **API / Library** | If any external tools were used |
+
+---
+
+## 📚 What We Have Studied  
+
+Here are the key JavaScript concepts or tools covered while building this project 🧩   
+
+> Concepts practiced include:  
+> 
+
+---
+
+## 🌿 Lessons Learned  
+Reflect briefly on your takeaways:  
+
+> - 
+
+---
+
+## 🖼️ Screenshots / Demo  
+
+![App Screenshot](./images/demo.png)  
+
+🔗 **Live Demo:** [https://your-demo-link.vercel.app](https://your-demo-link.vercel.app)  
+
+---
+
+## 💫 Author  
+👩‍💻 **Created by [Aliya](https://github.com/aliyasyeddd)**  
+> _“Build. Break. Learn. Repeat.”_ 🌸  
+
+---

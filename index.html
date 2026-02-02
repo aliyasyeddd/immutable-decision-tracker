@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Import map to resolve bare module specifiers in the browser -->
+    <script type="importmap">
+      {
+        "imports": {
+          "immutable": "https://esm.sh/immutable@5.1.4"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Immutable Decision Tracker</h1>
+     
+      <form id="decision-form" class="form" aria-labelledby="decision-label">
+        <label id="decision-label" for="decision-input" class="sr-only"
+          >Decision</label
+        >
+        <p id="input-desc" class="sr-only">
+          Type a decision into the field. The Add Decision button is enabled but
+          does not add items in this static demo.
+        </p>
+        <input
+          id="decision-input"
+          type="text"
+          placeholder="Enter a decision..."
+          aria-describedby="input-desc helper"
+        />
+        <button id="add-btn" type="submit" aria-describedby="input-desc helper">
+          Add Decision
+        </button>
+        <div id="helper" class="sr-only">
+          Button enabled — still a static demo (no action).
+        </div>
+      </form>
+
+      <section class="decisions" aria-labelledby="decisions-heading">
+        <h2 id="decisions-heading">Decisions</h2>
+        <p id="no-decisions" class="muted" role="status" aria-live="polite" aria-atomic="true">No decisions added yet.</p>
+        <ul id="decision-list" role="list" aria-live="polite" aria-relevant="additions"></ul>
+        <!-- Decision list will be rendered here by JavaScript -->
+      </section>
+      <!-- Decision list will be rendered here by JavaScript -->
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

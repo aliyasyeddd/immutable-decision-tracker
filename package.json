@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "npx http-server -p 5500 --silent"
+  },
+  "dependencies": {
+    "immutable": "^5.1.4"
+  }
+}
