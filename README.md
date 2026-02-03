@@ -37,9 +37,6 @@ What makes it unique is that **every update creates a new state** — nothing is
 ---
 
 ## 📚 What We Have Studied  
-
-Here are the key JavaScript concepts or tools covered while building this project 🧩   
-
 > Key JavaScript concepts practiced while building this project 🧩
 
 - ES6 Modules (`import` / `export`)

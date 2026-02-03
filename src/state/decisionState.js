@@ -18,7 +18,7 @@ export function createInitialState() {
 
 //update function to add a decision to the state
 export function addDecision(state, decision) {
-  return state.update("decisions", (list) => list.push(decision));
+  return state.update("decisions", list => list.push(decision));
 }
 
 

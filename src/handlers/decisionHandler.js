@@ -24,8 +24,6 @@ export function bindDeleteDecision(onDeleteDecision) {
 
     //find index of the clicked item
     const index = Array.from(list.children).indexOf(listItem);
-    if (index === -1) return;
-
     onDeleteDecision(index);
   });
 }
