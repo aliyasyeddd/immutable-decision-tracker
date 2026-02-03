@@ -40,7 +40,7 @@ What makes it unique is that **every update creates a new state** — nothing is
 > Key JavaScript concepts practiced while building this project 🧩
 
 - ES6 Modules (`import` / `export`)
-- Immutable data structures (`List`)
+- Immutable data structures (`List, Map`)
 - Pure functions and predictable state updates
 - Separation of concerns (state, UI, handlers)
 - DOM manipulation and event handling
